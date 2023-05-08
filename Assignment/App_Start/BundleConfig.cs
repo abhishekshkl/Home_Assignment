@@ -10,6 +10,13 @@ namespace Assignment
         {
             bundles.Add(new ScriptBundle("~/bundles/jquery").Include(
                         "~/Scripts/jquery-{version}.js"));
+            bundles.Add(new ScriptBundle("~/bundles/jquery").Include(
+                        "~/Scripts/kendo.all.min.js"));
+            bundles.Add(new ScriptBundle("~/bundles/jquery").Include(
+                        "~/Scripts/Index.js")); 
+            
+            bundles.Add(new ScriptBundle("~/bundles/Angular").Include(
+                        "~/Scripts/angular.min.js"));
 
             // Use the development version of Modernizr to develop with and learn from. Then, when you're
             // ready for production, use the build tool at https://modernizr.com to pick only the tests you need.
@@ -21,6 +28,7 @@ namespace Assignment
 
             bundles.Add(new StyleBundle("~/Content/css").Include(
                       "~/Content/bootstrap.css",
+                      "~/Content/default-main.css",
                       "~/Content/site.css"));
         }
     }
